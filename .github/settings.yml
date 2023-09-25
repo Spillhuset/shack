@@ -1,0 +1,18 @@
+_extends: .github
+
+repository:
+  name: discord-bot-boilerplate
+  description: "A boilerplate for my bots"
+  private: false
+  is_template: true
+
+branches:
+  - name: main
+    protection:
+      required_status_checks:
+        checks:
+          - context: Test Build
+          - context: ESLint
+          - context: Jest
+          - context: CodeQL
+          - context: DeepScan

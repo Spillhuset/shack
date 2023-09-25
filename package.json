@@ -1,0 +1,58 @@
+{
+  "name": "discord-bot-boilerplate",
+  "main": "build",
+  "scripts": {
+    "build": "tsc",
+    "build:watch": "tsc -w",
+    "docker": "npm run docker:build && npm run docker:up",
+    "docker:build": "docker-compose --project-directory . build",
+    "docker:down": "docker-compose --project-directory . down",
+    "docker:logs": "docker-compose --project-directory . logs --tail=500 -f",
+    "docker:start": "npm run docker:up",
+    "docker:stop": "npm run docker:down",
+    "docker:up": "docker-compose --project-directory . up -d",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "start": "node .",
+    "test": "jest"
+  },
+  "dependencies": {
+    "@sapphire/type": "2.4.0",
+    "@typegoose/typegoose": "11.5.0",
+    "bufferutil": "4.0.7",
+    "dedent": "1.5.1",
+    "discord-token-reset": "github:promise/discord-tokens",
+    "discord.js": "14.13.0",
+    "dotenv": "16.3.1",
+    "erlpack": "github:discord/erlpack",
+    "mongoose": "7.5.2",
+    "superagent": "8.1.2",
+    "utf-8-validate": "6.0.3",
+    "winston": "3.10.0",
+    "winston-daily-rotate-file": "4.7.1",
+    "zlib-sync": "0.1.8"
+  },
+  "devDependencies": {
+    "@tsconfig/node18": "18.2.2",
+    "@tsconfig/strictest": "2.0.2",
+    "@types/jest": "29.5.5",
+    "@types/node": "18.17.19",
+    "@types/superagent": "4.1.18",
+    "eslint": "8.50.0",
+    "eslint-config-promise": "github:promise/eslint-config",
+    "jest": "29.7.0",
+    "ts-jest": "29.1.1",
+    "typescript": "5.2.2"
+  },
+  "eslintConfig": {
+    "extends": "promise"
+  },
+  "jest": {
+    "preset": "ts-jest",
+    "testEnvironment": "node",
+    "testPathIgnorePatterns": [
+      "<rootDir>/build/",
+      "<rootDir>/node_modules/"
+    ]
+  }
+}
