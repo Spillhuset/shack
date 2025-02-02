@@ -27,7 +27,7 @@
     "erlpack": "github:discord/erlpack",
     "mongoose": "7.5.2",
     "superagent": "8.1.2",
-    "utf-8-validate": "6.0.3",
+    "utf-8-validate": "6.0.5",
     "winston": "3.10.0",
     "winston-daily-rotate-file": "4.7.1",
     "zlib-sync": "0.1.8"
