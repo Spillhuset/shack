@@ -1,0 +1,27 @@
+name: Docker Image
+
+on:
+  push:
+  workflow_dispatch:
+
+jobs:
+  ghcr:
+    name: ${{ github.ref == 'refs/heads/main' && 'Build and Push' || 'Test Build' }}
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4
+
+      - name: Login to ghcr.io
+        uses: docker/login-action@74a5d142397b4f367a81961eba4e8cd7edddf772 # v3
+        with:
+          registry: ghcr.io
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: ${{ github.ref == 'refs/heads/main' && 'Build and Push' || 'Test Build' }}
+        uses: docker/build-push-action@263435318d21b8e681c14492fe198d362a7d2c83 # v6
+        with:
+            push: ${{ github.ref == 'refs/heads/main' }}
+            tags: ghcr.io/promise/discord-bot-boilerplate:latest
