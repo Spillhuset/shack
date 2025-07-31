@@ -3,7 +3,7 @@ import { msToHumanShortTime } from "../../utils/time";
 
 export default {
   name: "ping",
-  description: "Ping the bot",
+  description: "Ping-pong",
   public: true,
   async execute(interaction) {
     const now = Date.now();

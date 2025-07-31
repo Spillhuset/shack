@@ -1,5 +1,5 @@
 {
-  "name": "discord-bot-boilerplate",
+  "name": "shack",
   "main": "build",
   "scripts": {
     "build": "tsc",
@@ -23,7 +23,11 @@
     "dedent": "1.6.0",
     "discord.js": "14.21.0",
     "dotenv": "17.2.0",
+    "html-entities": "2.6.0",
+    "html-to-md": "0.8.8",
+    "match-sorter": "8.1.0",
     "mongoose": "8.16.4",
+    "safe-timers": "1.1.0",
     "winston": "3.17.0",
     "winston-daily-rotate-file": "5.0.0",
     "zlib-sync": "0.1.10"
@@ -33,6 +37,7 @@
     "@tsconfig/strictest": "2.0.5",
     "@types/jest": "30.0.0",
     "@types/node": "22.16.5",
+    "@types/safe-timers": "1.1.2",
     "eslint": "9.31.0",
     "eslint-config-promise": "github:promise/eslint-config",
     "jest": "30.0.4",
