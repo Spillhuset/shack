@@ -36,7 +36,7 @@
     "@tsconfig/node22": "22.0.2",
     "@tsconfig/strictest": "2.0.6",
     "@types/jest": "30.0.0",
-    "@types/node": "22.18.10",
+    "@types/node": "22.18.11",
     "@types/safe-timers": "1.1.2",
     "eslint": "9.37.0",
     "eslint-config-promise": "github:promise/eslint-config",
