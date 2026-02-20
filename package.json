@@ -38,7 +38,7 @@
     "@types/jest": "30.0.0",
     "@types/node": "22.19.11",
     "@types/safe-timers": "1.1.2",
-    "eslint": "9.39.3",
+    "eslint": "10.0.1",
     "eslint-config-promise": "github:promise/eslint-config",
     "jest": "30.2.0",
     "ts-jest": "29.4.6",
