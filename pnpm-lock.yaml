@@ -12,8 +12,8 @@ importers:
         specifier: 2.6.0
         version: 2.6.0
       '@typegoose/typegoose':
-        specifier: 12.20.1
-        version: 12.20.1(mongoose@8.20.4)
+        specifier: 12.21.1
+        version: 12.21.1(mongoose@8.24.1)
       bufferutil:
         specifier: 4.0.9
         version: 4.0.9
@@ -36,8 +36,8 @@ importers:
         specifier: 8.3.0
         version: 8.3.0
       mongoose:
-        specifier: 8.20.4
-        version: 8.20.4
+        specifier: 8.24.1
+        version: 8.24.1
       safe-timers:
         specifier: 1.1.0
         version: 1.1.0
@@ -564,11 +564,11 @@ packages:
   '@tybys/wasm-util@0.10.3':
     resolution: {integrity: sha512-F3fo1MYrRJYL3zER0OUOmkutjr1Vp23m7OsSgp7nq4SP6OqX6C/56XFIPAl5bt3zaBRjmW7SGz3u/6LwFpYcOg==}
 
-  '@typegoose/typegoose@12.20.1':
-    resolution: {integrity: sha512-tHDg9XHOoCO09uy1IhTf9mDvLlIkh+TenwEha0P/SxXD0XMqMk1GdlhmjW1OP0movUdPepbdX3x801zZnh0M6w==}
+  '@typegoose/typegoose@12.21.1':
+    resolution: {integrity: sha512-lmFeUlki8ygtW7MsqxJbIBm1bsTKPvj5avHGz7ka1WZ0ZG0vhRwUoui2UvOnYZVtxjfk9ee/JXMKtaIjOh7Rmw==}
     engines: {node: '>=16.20.1'}
     peerDependencies:
-      mongoose: ~8.19.1
+      mongoose: ~8.21.0
 
   '@types/babel__core@7.20.5':
     resolution: {integrity: sha512-qoQprZvz5wQFJwMDqeseRXWv3rqMvhgpbXFfVyWhbx9X47POIA6i/+dXefEmZKoAgOaTdaIgNSMqMIU61yRyzA==}
@@ -1303,7 +1303,7 @@ packages:
     engines: {node: '>=10'}
 
   eslint-config-promise@https://codeload.github.com/promise/eslint-config/tar.gz/f35740d3efbeabb7f40ef7294fcefafc9d4b0148:
-    resolution: {gitHosted: true, integrity: sha512-qDWXd38Nxf4Yh2K/9KFnAu+3XCHZp0Ya8AsBuLDdlY8SIjHV1Fww28J95CLP7CCN+RazG24hvC7UzWvGMDVD1w==, tarball: https://codeload.github.com/promise/eslint-config/tar.gz/f35740d3efbeabb7f40ef7294fcefafc9d4b0148}
+    resolution: {gitHosted: true, tarball: https://codeload.github.com/promise/eslint-config/tar.gz/f35740d3efbeabb7f40ef7294fcefafc9d4b0148}
     version: 0.0.0
     peerDependencies:
       '@stylistic/eslint-plugin-js': 4.2.0
@@ -2195,8 +2195,8 @@ packages:
       socks:
         optional: true
 
-  mongoose@8.20.4:
-    resolution: {integrity: sha512-o4ABeT3IEk1Z4dGt3XjHJ0x9OjyWvakC1+btPpzWqCovqyidKGdbB05/g87cdh7AuWXFQKHOxt+L/OZOBps4hw==}
+  mongoose@8.24.1:
+    resolution: {integrity: sha512-UpHBA0l5kHyKJQFjmBaFYQFo5sgz1DK0TRqDkOyBLYbqiIbKKhIvBpHWBXqeo0rgW4kGI1UhhAw+kTQZoj1BdA==}
     engines: {node: '>=16.20.1'}
 
   mpath@0.9.0:
@@ -3679,11 +3679,11 @@ snapshots:
       tslib: 2.8.1
     optional: true
 
-  '@typegoose/typegoose@12.20.1(mongoose@8.20.4)':
+  '@typegoose/typegoose@12.21.1(mongoose@8.24.1)':
     dependencies:
       lodash: 4.18.1
       loglevel: 1.9.2
-      mongoose: 8.20.4
+      mongoose: 8.24.1
       reflect-metadata: 0.2.2
       semver: 7.8.5
       tslib: 2.8.1
@@ -5630,7 +5630,7 @@ snapshots:
       bson: 6.10.4
       mongodb-connection-string-url: 3.0.2
 
-  mongoose@8.20.4:
+  mongoose@8.24.1:
     dependencies:
       bson: 6.10.4
       kareem: 2.6.3
